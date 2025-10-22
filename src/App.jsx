@@ -8,7 +8,7 @@ function App() {
 
       <div
         className="max-w-[400px] grid grid-cols-4 gap-6 font-bold text-2xl
-                    [&>button]:bg-gray-200 
+                    [&>button]:bg-red-400 
                       [&>button]:rounded-xl 
                       [&>button]:py-3 
                       [&>button]:shadow-md 
