@@ -1,6 +1,10 @@
 import "./App.css";
 
 function App() {
+
+
+const [input, setInput] = useState("");
+
   return (
     <>
     <div className="h-screen w-screen  bg-gray-100">
@@ -16,44 +20,45 @@ function App() {
                       [&>button]:transition 
                       [&>button]:duration-200 
                       [&>button]:active:scale-95"
-      >
-        {/* Main screen result showing */}
-        <div className="col-span-4 gap-y-10">it will show result here</div>
-        {/* first row of calculator */}
+        >
+          {/* Main screen result showing */}
+          <div className="col-span-4 gap-y-10">it will show result here</div>
+          
+          {/* first row of calculator */}
 
-        <button>(</button>
-        <button>C</button>
-        <button>)</button>
-        <button>/</button>
+          <button>(</button>
+          <button>C</button>
+          <button>)</button>
+          <button>/</button>
 
-        {/* Second Row */}
+          {/* Second Row */}
 
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>x</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>x</button>
 
-        {/* Third Row */}
+          {/* Third Row */}
 
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>-</button>
 
-        {/* Fourth Row */}
+          {/* Fourth Row */}
 
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button >+</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>+</button>
 
-        {/* fifth row */}
+          {/* fifth row */}
 
-        <button className="col-span-2">0</button>
-        <button>.</button>
-        <button>=</button>
+          <button className="col-span-2">0</button>
+          <button>.</button>
+          <button>=</button>
+        </div>
       </div>
-          </div>
     </>
   );
 }
